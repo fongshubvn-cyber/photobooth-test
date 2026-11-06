@@ -8,9 +8,9 @@ set "PATH=C:\Program Files\Git\cmd;%PATH%"
 cd /d "%~dp0"
 
 echo ========================================================
-echo   NCTTX PHOTOBOOTH - DEPLOY TO GITHUB
-echo   Repo: https://github.com/fongshubvn-cyber/ncttx-photobooth2
-echo   Link: https://fongshubvn-cyber.github.io/ncttx-photobooth2/
+echo   NCTTX PHOTOBOOTH (TEST) - DEPLOY TO GITHUB
+echo   Repo: https://github.com/fongshubvn-cyber/photobooth-test
+echo   Link: https://fongshubvn-cyber.github.io/photobooth-test/
 echo ========================================================
 echo.
 
@@ -18,7 +18,7 @@ echo.
 if not exist ".git" (
     echo [0/3] Khoi tao Git repository...
     git init
-    git remote add origin https://github.com/fongshubvn-cyber/ncttx-photobooth2.git
+    git remote add origin https://github.com/fongshubvn-cyber/photobooth-test.git
     git fetch origin
     git branch -M main
 )
@@ -70,10 +70,10 @@ if %errorlevel% neq 0 (
 
 echo.
 echo ========================================================
-echo   THANH CONG! Da deploy phien ban moi len GitHub!
-echo   Web: https://fongshubvn-cyber.github.io/ncttx-photobooth2/
-echo   Admin: https://fongshubvn-cyber.github.io/ncttx-photobooth2/admin.html
-echo   Download: https://fongshubvn-cyber.github.io/ncttx-photobooth2/download.html
+echo   THANH CONG! Da deploy phien ban TEST len GitHub!
+echo   Web: https://fongshubvn-cyber.github.io/photobooth-test/
+echo   Admin: https://fongshubvn-cyber.github.io/photobooth-test/admin.html
+echo   Download: https://fongshubvn-cyber.github.io/photobooth-test/download.html
 echo   (Luu y: GitHub Pages co the mat 1-2 phut de cap nhat)
 echo ========================================================
 echo.
